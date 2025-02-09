@@ -2,4 +2,11 @@
 These website files are from Ch6 of "AWS Projects for Beginners: 21 Real World Projects to Get You Started as an AWS Certified Cloud Practitioner" by Femi Reis. The files were downloaded from https://femireis.com/fridge/ (https://femireis.com/Meal_6_Sauteed_S3.zip)
 
 
-test
+
+
+![image](https://github.com/user-attachments/assets/3362ec99-2afb-459d-90d1-1cda4d8fd845)
+
+![image](https://github.com/user-attachments/assets/f600efed-fd2a-4901-9e35-2b91f980992d)
+
+
+![image](https://github.com/user-attachments/assets/c82dd66c-3ddb-4abb-b683-5a56a125134f)
