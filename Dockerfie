@@ -1,11 +1,11 @@
-FROM apache:2.4.63
+FROM httpd:2.4
 
-RUN sudo apt update && sudo apt upgrade
+RUN apt-get update && apt-get upgrade -y
 
-COPY main /var/www/html/
+COPY main /usr/local/apache2/htdocs/
 
-WORKDIR /var/www/html/
+WORKDIR /usr/local/apache2/htdocs/
 
 EXPOSE 80
 
-RUN sudo service apache2 restart
+CMD ["httpd-foreground"]
