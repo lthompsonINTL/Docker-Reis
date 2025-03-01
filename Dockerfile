@@ -2,9 +2,9 @@ FROM httpd:2.4
 
 RUN apt-get update && apt-get upgrade -y
 
-COPY main /usr/local/apache2/htdocs/
+COPY main /usr/var/www/
 
-WORKDIR /usr/local/apache2/htdocs/
+WORKDIR /usr/var/www/
 
 EXPOSE 80
 
