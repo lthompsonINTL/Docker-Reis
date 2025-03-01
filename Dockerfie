@@ -8,4 +8,4 @@ WORKDIR /var/www/html/
 
 EXPOSE 80
 
-RUN sudo service apache2 restart 
+RUN sudo service apache2 restart
