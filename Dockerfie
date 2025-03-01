@@ -1,1 +1,11 @@
+FROM apache:2.4.63
 
+RUN sudo apt update && sudo apt upgrade
+
+COPY main /var/www/html/
+
+WORKDIR /var/www/html/
+
+EXPOSE 80
+
+RUN sudo service apache2 restart 
