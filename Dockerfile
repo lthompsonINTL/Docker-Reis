@@ -2,7 +2,7 @@ FROM httpd:2.4
 
 RUN apt-get update && apt-get upgrade -y
 
-RUN apt Install git
+RUN apt install git
 
 RUN git clone https://github.com/lthompsonINTL/Reis-website.git /usr/var/www/
 
