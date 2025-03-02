@@ -1,3 +1,5 @@
+// THe Jenkins file will setup the build process for creating a Docker Image. Code is pulled from a GitHub repository and then a Docker Image is created
+
 pipeline {
     agent any
     tools{
