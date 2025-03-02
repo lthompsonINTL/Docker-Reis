@@ -1,4 +1,4 @@
-// THe Jenkins file will setup the build process for creating a Docker Image. Code is pulled from a GitHub repository and then a Docker Image is created
+// THe Jenkins file will setup the build process for creating a Docker Image. Code is pulled from a GitHub repository and then a Docker Image is created. This Jenkins file is specific for Reis Website
 
 pipeline {
     agent any
