@@ -1,3 +1,5 @@
+#This Docker file is specific for Reis Website
+
  # Pull a node from docker registry hub
 FROM httpd:2.4 
 
