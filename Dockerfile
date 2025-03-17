@@ -13,10 +13,10 @@ RUN apt install git -y
 RUN git clone https://github.com/lthompsonINTL/Reis-website.git /usr/var/www/    
 
 # sets the current directory to /usr/var/www/
-WORKDIR /usr/var/www/    
+WORKDIR /usr/var/www/index.html    
 
 # sets port 80 as available for incoming web requests
 EXPOSE 80  
 
 # sets the Apache website to be the main process
-CMD ["httpd-foreground"]  
+CMD [“apache2ctl”, “-D”, “FOREGROUND”]
