@@ -22,4 +22,4 @@ WORKDIR /usr/local/apache2/htdocs/index.html
 EXPOSE 80  
 
 # sets the Apache website to be the main process
-CMD [“apache2ctl”, “-D”, “FOREGROUND”]
+CMD [“apache2ctl”, “-D”, “FOREGROUND”] 
