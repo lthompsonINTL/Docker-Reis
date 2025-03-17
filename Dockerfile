@@ -10,10 +10,10 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt install git -y      
 
 # Copies all the GitHub source files from the repository and copies them to the Apache webserver so the webpage can run from this directory
-RUN git clone https://github.com/lthompsonINTL/Reis-website.git /usr/var/www/    
+RUN git clone https://github.com/lthompsonINTL/Reis-website.git /usr/local/apache2/htdocs 
 
-# sets the current directory to /usr/var/www/
-WORKDIR /usr/var/www/index.html    
+# sets the current directory to /usr/local/apache2/htdocs
+WORKDIR /usr/local/apache2/htdocs/index.html    
 
 # sets port 80 as available for incoming web requests
 EXPOSE 80  
