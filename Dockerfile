@@ -19,7 +19,7 @@ RUN rm -rf /usr/local/apache2/htdocs/*
 RUN git clone https://github.com/lthompsonINTL/Reis-website.git /usr/local/apache2/htdocs 
 
 # sets the current directory to /usr/local/apache2/htdocs
-WORKDIR /usr/local/apache2/htdocs/index.html    
+WORKDIR /usr/local/apache2/htdocs/    
 
 # sets port 80 as available for incoming web requests
 EXPOSE 80  
