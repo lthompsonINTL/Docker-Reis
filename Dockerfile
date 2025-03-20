@@ -19,10 +19,10 @@ RUN apt-get install nano -y
 RUN git clone https://github.com/lthompsonINTL/Reis-website.git /var/www/html/
 
 # sets the current directory to /usr/local/apache2/htdocs
-WORKDIR /usr/local/apache2/htdocs/    
+WORKDIR /var/www/html/    
 
 # sets port 80 as available for incoming web requests
 EXPOSE 80  
 
 # sets the Apache website to be the main process
-CMD [“apache2ctl”, “-D”, “FOREGROUND”] 
+CMD [“/var/www/html/”, “-D”, “FOREGROUND”] 
