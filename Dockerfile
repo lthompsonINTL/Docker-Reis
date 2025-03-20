@@ -13,10 +13,10 @@ RUN apt install git -y
 RUN apt-get install nano -y
 
 # remove contents from apache default web folder
-RUN rm -rf /usr/local/apache2/htdocs/*
+#RUN rm -rf /usr/local/apache2/htdocs/*
 
 # Copies all the GitHub source files from the repository and copies them to the Apache webserver so the webpage can run from this directory
-RUN git clone https://github.com/lthompsonINTL/Reis-website.git /usr/local/apache2/htdocs 
+RUN git clone https://github.com/lthompsonINTL/Reis-website.git /var/www/html/
 
 # sets the current directory to /usr/local/apache2/htdocs
 WORKDIR /usr/local/apache2/htdocs/    
